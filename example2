@@ -1,0 +1,22 @@
+
+let me = {
+  age:32,
+  name: 'Ashutosh Verma',
+  thisInArrow: () => {
+    return 'My name is ' + this.name
+  },
+  thisInRegular() {
+    return 'My name is ' + this.name + ' '+this.age
+  },
+}
+console.log(me.thisInArrow())
+console.log(me.thisInRegular())
+
+let add = (x, y) => console.log(x + y)
+new add(2, 3);
+
+let user = {
+    name:'sayeed'
+}
+
+console.log(user);
